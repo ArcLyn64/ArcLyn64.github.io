@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }} | ArclingML</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="assets/js/anime.min.js"></script>
+  </head>
+  <body>
+    {% include site-header.html %}
+    <div class="{{page.bodyclass | default: }}">
+      {{content}}
+    </div>
+    {% include site-footer.html %}
+  </body>
+</html>

@@ -1,0 +1,44 @@
+//TODO
+$color-fg: #dadada;
+$color-fg-l: lighten($color-fg, 10%);
+$color-fg-d: darken($color-fg, 10%);
+$color-bg: #312121;
+$color-bg-l: lighten($color-bg, 10%);
+$color-bg-d: darken($color-bg, 10%);
+$color-ac: #21d1da;
+$color-ac-l: lighten($color-ac, 10%);
+$color-ac-d: darken($color-ac, 10%);
+
+.test-square{
+  width: 100px;
+  height: 100px
+}
+
+.color-fg{
+  background-color: $color-fg;
+}
+.color-fg-l{
+  background-color: $color-fg-l;
+}
+.color-fg-d{
+  background-color: $color-fg-d;
+}
+.color-bg{
+  background-color: $color-bg;
+}
+.color-bg-l{
+  background-color: $color-bg-l;
+}
+.color-bg-d{
+  background-color: $color-bg-d;
+}
+.color-ac{
+  background-color: $color-ac;
+}
+.color-ac-l{
+  background-color: $color-ac-l;
+}
+.color-ac-d{
+  background-color: $color-ac-d;
+}
+
