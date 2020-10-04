@@ -4,7 +4,7 @@ $color-fg-l: lighten($color-fg, 10%);
 $color-fg-d: darken($color-fg, 10%);
 $color-bg: #222222;
 $color-bg-l: lighten($color-bg, 10%);
-$color-bg-d: darken($color-bg, 10%);
+$color-bg-d: darken($color-bg, 10%); //#090909
 $color-ac: #aaaadd;
 $color-ac-l: lighten($color-ac, 10%);
 $color-ac-d: darken($color-ac, 10%);
@@ -61,6 +61,8 @@ html {
 
 // Page Classes
 .site-header{
+  margin-bottom: 20px;
+
   .header-content{
     display: flex;
     flex-flow: row nowrap;
@@ -122,6 +124,7 @@ html {
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
+  margin-top: 20px;
   .link{
     background-color: $color-bg-l;
     height: 100px;
@@ -137,5 +140,42 @@ html {
     flex-grow: 1;
     color: $color-fg;
     text-decoration: none;
+  }
+}
+
+.game-jams{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  .game-embed{
+    margin: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    h2 {
+      font-size: 100px;
+      word-break: break-word;
+      
+    }
+    iframe{
+      margin: 10px;
+    }
+  }
+}
+
+.data-analyses{
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  .current-feature {
+    display: flex;
+    justify-content: center;
+  }
+  .comments {
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 1000px;
   }
 }

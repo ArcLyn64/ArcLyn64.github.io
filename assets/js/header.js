@@ -1,4 +1,4 @@
-header_animation = anime({
+var header_animation = anime({
   targets: '.header-border',
   width: ['0%', '100%'],
   opacity: [0, 1],
