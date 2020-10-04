@@ -4,7 +4,11 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ArclingML
+twitter_link: "https://twitter.com/ArclingML/"
 github_username:  ArclingML
+github_link: "https://github.com/ArclingML/"
+youtube_username: Arcling
+youtube_link: "https://www.youtube.com/channel/UCn7-tDUMym_md1WM8nnPjBA"
 
 # Build settings
 plugins:
