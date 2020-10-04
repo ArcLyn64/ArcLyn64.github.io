@@ -66,10 +66,12 @@ html {
     flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: center;
+    text-align: center;
   }
 
   a{
     font-size: 20px;
+    flex-grow: 1;
   }
   %a-main{
     text-decoration: none;
@@ -119,6 +121,7 @@ html {
   flex-flow: row nowrap;
   justify-content: space-evenly;
   align-items: center;
+  text-align: center;
   .link{
     background-color: $color-bg-l;
     height: 100px;
