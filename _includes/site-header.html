@@ -1,0 +1,16 @@
+<div class="site-header">
+  <div class="header-border"></div>
+  <div class="header-content">
+    <a {% if page.url == "/404.html" %}class="current"{% else %}class="not-current"{% endif %}
+      href="/404.html"> 
+      Temp Link 
+    </a>
+    <a class="home-link" href="/"> ArclingML </a>
+    <a {% if page.url == "/404.html" %}class="current"{% else %}class="not-current"{% endif %}
+      href="/404.html"> 
+      Temp Link 
+    </a>
+  </div>
+  <div class="header-border"></div>
+</div>
+<script src="assets/js/header.js"></script>

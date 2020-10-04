@@ -1,19 +1,15 @@
 //TODO
-$color-fg: #dadada;
+$color-fg: #aaaaaa;
 $color-fg-l: lighten($color-fg, 10%);
 $color-fg-d: darken($color-fg, 10%);
-$color-bg: #312121;
+$color-bg: #222222;
 $color-bg-l: lighten($color-bg, 10%);
 $color-bg-d: darken($color-bg, 10%);
-$color-ac: #21d1da;
+$color-ac: #aaaadd;
 $color-ac-l: lighten($color-ac, 10%);
 $color-ac-d: darken($color-ac, 10%);
 
-.test-square{
-  width: 100px;
-  height: 100px
-}
-
+// Color options
 .color-fg{
   background-color: $color-fg;
 }
@@ -42,3 +38,77 @@ $color-ac-d: darken($color-ac, 10%);
   background-color: $color-ac-d;
 }
 
+// Shapes
+.test-square{
+  width: 100px;
+  height: 100px
+}
+
+
+// mixins
+@mixin headings {
+  h1, h2, h3, h4, h5, h6 {
+    @content;
+  }
+}
+
+// General Page Formatting
+html {
+  font-family: Arial;
+  color: $color-fg;
+  background-color: $color-bg;
+}
+
+// Page Classes
+.site-header{
+  .header-content{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  a{
+    font-size: 20px;
+  }
+  %a-main{
+    text-decoration: none;
+    font-weight: bold;
+  }
+  a.current{
+    @extend %a-main;
+    &:link, &:visited{
+      color: $color-fg-l;
+    }
+    &:hover{
+      color: $color-fg-l;
+    }
+  }
+  a.not-current{
+    @extend %a-main;
+    &:link, &:visited{
+      color: $color-fg;
+    }
+    &:hover{
+      color: $color-fg-l;
+    }
+  }
+  a.home-link{
+    text-decoration: none;
+    font-size: 40px;
+    margin: 10px;
+    &:link, &:visited{
+      color: $color-ac;
+    }
+    &:hover{
+      color: $color-ac-l;
+    }
+  }
+
+  .header-border{
+    height: 5px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: $color-ac;
+  }
+}
