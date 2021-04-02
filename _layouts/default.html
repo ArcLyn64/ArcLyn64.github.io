@@ -8,9 +8,7 @@
   </head>
   <body style="margin:0">
     {% include site-header.html %}
-    <div class="{{page.bodyclass | default: none}}">
-      {{content}}
-    </div>
+    {{content}}
     {% include site-footer.html %}
   </body>
 </html>
