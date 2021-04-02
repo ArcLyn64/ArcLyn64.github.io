@@ -1,14 +1,12 @@
 <div class="site-header">
   <div class="header-border"></div>
   <div class="header-content">
-    <a {% if page.url == "/game-jams.html" %}class="current"{% else %}class="not-current"{% endif %}
-      href="/game-jams.html"> 
-      Game Jam Entries
+    <a class="outbound" href={{ site.github_link }}>
+      GitHub
     </a>
     <a class="home-link" href="/"> ArclingML </a>
-    <a {% if page.url == "/data-analyses.html" %}class="current"{% else %}class="not-current"{% endif %}
-      href="/data-analyses.html"> 
-      Data Analyses
+    <a class="outbound" href={{ site.youtube_link }}>
+      Youtube
     </a>
   </div>
   <div class="header-border"></div>

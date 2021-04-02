@@ -88,7 +88,7 @@ html {
       color: $color-fg-l;
     }
   }
-  a.not-current{
+  a.not-current, a.outbound{
     @extend %a-main;
     &:link, &:visited{
       color: $color-fg;
