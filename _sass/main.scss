@@ -144,7 +144,7 @@ html {
 }
 
 .content-stripe{
-  $stripe-width: 700px;
+  $stripe-width: 800px;
   $half-stripe-width: ($stripe-width / 2);
   overflow: hidden;
   max-width: $stripe-width;
@@ -157,6 +157,26 @@ html {
   padding-bottom: $half-stripe-width - 100px;
   border-bottom-right-radius: $half-stripe-width;
   border-bottom-left-radius: $half-stripe-width;
+
+  .content-stripe-container{
+    margin-left: 20px;
+    margin-right: 20px;
+
+    @include headings{
+      padding-bottom: 2px;
+      margin-bottom: 5px;
+      border-bottom: 2px solid $color-fg;
+    }
+
+    table{
+      margin-right: auto;
+      margin-left: auto;
+      padding: 0;
+      width: 97%;
+    }
+  }
+
+
 }
 
 .game-jams{
