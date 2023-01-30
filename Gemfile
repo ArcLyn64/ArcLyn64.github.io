@@ -3,6 +3,5 @@
 source "https://rubygems.org"
 
 # gem "rails"
-gem "jekyll"
-gem "jekyll-feed"
 gem "github-pages"
+gem "webrick", "~> 1.7"

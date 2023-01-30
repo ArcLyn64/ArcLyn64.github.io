@@ -154,7 +154,7 @@ a{
 
 .content-stripe{
   $stripe-width: 800px;
-  $half-stripe-width: calc($stripe-width / 2);
+  $half-stripe-width: ($stripe-width / 2);
   overflow: hidden;
   max-width: $stripe-width;
   width: 100%;

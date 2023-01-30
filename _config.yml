@@ -14,16 +14,3 @@ youtube_link: "https://www.youtube.com/channel/@ArcLyn64"
 plugins:
   - jekyll-feed
 
-# Github required settings
-lsi: false
-safe: true
-incremental: false
-highlighter: rouge
-gist:
-  noscript: false
-markdown: kramdown
-highlighter: rouge
-kramdown:
-  input: GFM
-  math_engine: mathjax
-  syntax_highlighter: rouge
