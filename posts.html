@@ -1,0 +1,16 @@
+---
+layout: default
+title: "Posts"
+---
+<h2 class="fade-in">Blog Posts</h2>
+<div class="posts">
+  {% for post in site.posts %}
+    <div class="postcard fade-in">
+      <p class="date">{{ post.datelbl }}</p>
+      <a href={{ post.url }}>
+        <h2 class="post-title">{{ post.title }}</h2>
+      </a>
+      <p> {{ post.desc }} </p>
+    </div>
+  {% endfor %}
+</div>

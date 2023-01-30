@@ -9,10 +9,11 @@ var fade_in = anime({
 
 var pull_down = anime({
   targets: '.pull-down',
-  height: 1000,
+  height: ["0px", $(".content-stripe-container")[0].clientHeight],
   duration: 3000,
   easing: 'easeOutQuad'
 })
+
 var pull_down_fadein = anime({
   targets: '.pull-down',
   opacity: [0, 1],

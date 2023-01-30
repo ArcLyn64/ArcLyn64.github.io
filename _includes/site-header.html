@@ -4,7 +4,13 @@
     <a class="outbound" href={{ site.github_link }}>
       GitHub
     </a>
-    <a class="home-link" href="/"> ArclingML </a>
+    <a {% if page.url == "/resume.html" %}class="current"{% else %}class="not-current"{% endif %} href="/resume.html">
+      Résumé
+    </a>
+    <a class="home-link" href="/"> ArcLyn64 </a>
+    <a {% if page.url == "/posts.html" %}class="current"{% else %}class="not-current"{% endif %} href="/posts.html">
+      Blog
+    </a>
     <a class="outbound" href={{ site.youtube_link }}>
       YouTube
     </a>

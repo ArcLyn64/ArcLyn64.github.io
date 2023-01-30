@@ -59,6 +59,15 @@ html {
   background-color: $color-bg;
 }
 
+a{
+  &:link, &:visited{
+    color: $color-fg;
+  }
+  &:hover{
+    color: $color-fg-l;
+  }
+}
+
 // Page Classes
 .site-header{
   margin-bottom: 0px;
@@ -145,16 +154,16 @@ html {
 
 .content-stripe{
   $stripe-width: 800px;
-  $half-stripe-width: ($stripe-width / 2);
+  $half-stripe-width: calc($stripe-width / 2);
   overflow: hidden;
   max-width: $stripe-width;
   width: 100%;
-  height: 10px;
+  height: 0px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   background-color: $color-bg-l;
-  padding-bottom: $half-stripe-width - 100px;
+  padding-bottom: $half-stripe-width;
   border-bottom-right-radius: $half-stripe-width;
   border-bottom-left-radius: $half-stripe-width;
 
@@ -215,3 +224,50 @@ html {
     max-width: 1000px;
   }
 }
+
+.posts{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  .postcard {
+    width: 80%;
+    background-color: $color-bg-l;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 5px 5px 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: $color-bg-l;
+    border-radius: 5px;
+  }
+
+  p {
+    margin-bottom: 5px;
+  }
+
+  .date {
+    margin: 0px;
+    font-style: italic;
+    color: $color-fg-d;
+    font-size: 14px;
+  }
+
+  .post-title {
+    margin-top: 5px;
+  }
+
+  a{
+    display:block;
+    flex-grow: 1;
+    text-decoration: none;
+    &:link, &:visited{
+      color: $color-fg;
+    }
+    &:hover{
+      color: $color-fg-l;
+    }
+  }
+}
+
