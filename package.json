@@ -16,5 +16,8 @@
     "url": "https://github.com/ArcLyn64/ArcLyn64.github.io/issues"
   },
   "homepage": "https://github.com/ArcLyn64/ArcLyn64.github.io#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
 }
