@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch:sass": "npx sass sass:_site/css --watch",
+    "watch:11ty": "npx @11ty/eleventy --serve",
+    "start": "npm run watch:11ty & npm run watch:sass",
+    "clean": "rm -r _site"
   },
   "repository": {
     "type": "git",
@@ -18,6 +21,7 @@
   "homepage": "https://github.com/ArcLyn64/ArcLyn64.github.io#readme",
   "description": "",
   "dependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "sass": "^1.84.0"
   }
 }
