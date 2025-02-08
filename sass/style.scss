@@ -23,11 +23,13 @@ code {
 }
 
 a{
+    text-decoration-line: underline;
     &:link, &:visited{
       color: $color-light;
+      text-decoration-color: color.adjust($color-dark, $lightness: 20%);
     }
     &:hover{
-      color: $color-accent;
+      text-decoration-color: $color-light;
     }
 }
 
@@ -50,11 +52,15 @@ header {
         font-family: Moxiefully;
         display: grid;
         
-        p {
+        a {
             grid-area: 1 / 1 / 2 / 2;
             margin: 0px;
             padding: 20px;
-
+            color: $color-light;
+            &:hover{
+              color: $color-light;
+            }
+            text-decoration-line: none;
         }
         .bg1 {
             padding-left: 22px;
@@ -87,17 +93,46 @@ body.main {
         max-width: 800px;
         
         @include headings{
-            font-family: LTSaeada;
+            padding-left: 10px;
+            padding-right: 10px;
             font-weight: lighter;
             border-bottom: 3px solid color.adjust($color-dark, $lightness: 5%);
             margin-top: 0.3em;
             margin-bottom: 0.3em;
         }
+        h1, h2, h3 {
+            font-family: LTSaeada;
+        }
+        h4, h5, h6 {
+            font-family: Hauora;
+        }
         
         p {
+            padding-left: 10px;
+            padding-right: 10px;
             margin-top: 0.3em;
             margin-bottom: 0.3em;
         }
+
+        .post-title {
+            border: none;
+            margin-bottom: -5px;
+        }
+        .post-author {
+            padding-left:12px;
+            margin-bottom: 0px;
+        }
     }  
+    
+    hr.end-line {
+        border-color: color.adjust($color-accent, $lightness: -15%);
+        border-style: dashed;
+    }
+
+    hr.post-divider {
+        border-color: color.adjust($color-dark, $lightness: 5%);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
   
