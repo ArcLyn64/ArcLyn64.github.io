@@ -1,0 +1,103 @@
+$color-light:#aaaaaa;
+$color-dark:#111111;
+$color-accent: #474799;
+
+@use "fonts";
+@use 'sass:color';
+
+@mixin headings {
+    h1, h2, h3, h4, h5, h6 {
+      @content;
+    }
+}
+
+html {
+    color: $color-light;
+    background-color: $color-dark;
+    font-family: Hauora;
+	font-size: 20px;
+}
+
+code {
+    font-family: Fliege;
+}
+
+a{
+    &:link, &:visited{
+      color: $color-light;
+    }
+    &:hover{
+      color: $color-accent;
+    }
+}
+
+header {
+    height: 115px;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 70%,
+        0 100%
+    );
+    
+    .centerer {
+        max-width: 1400px;
+        margin: auto;
+    }
+        
+    .title {
+        font-size: 72px;
+        font-family: Moxiefully;
+        display: grid;
+        
+        p {
+            grid-area: 1 / 1 / 2 / 2;
+            margin: 0px;
+            padding: 20px;
+
+        }
+        .bg1 {
+            padding-left: 22px;
+            color: $color-dark;
+        }
+        .bg2 {
+            padding-left: 26px;
+            color: $color-accent;
+        }
+    }
+    background-color: color.adjust($color-dark, $lightness: 5%);
+}
+
+body.main {
+    margin: 0;
+    align-content: center;
+    
+    .squish-protect {
+        margin: 10px;
+    }
+
+    .content {
+        border: 5px solid color.adjust($color-dark, $lightness: 5%);
+        border-radius: 10px 20px 40px 20px;
+        padding-left:20px;
+        padding-right:20px;
+        align-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 800px;
+        
+        @include headings{
+            font-family: LTSaeada;
+            font-weight: lighter;
+            border-bottom: 3px solid color.adjust($color-dark, $lightness: 5%);
+            margin-top: 0.3em;
+            margin-bottom: 0.3em;
+        }
+        
+        p {
+            margin-top: 0.3em;
+            margin-bottom: 0.3em;
+        }
+    }  
+}
+  
