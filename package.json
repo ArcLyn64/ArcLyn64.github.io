@@ -5,7 +5,8 @@
   "scripts": {
     "watch:sass": "npx sass sass:_site/css --watch",
     "watch:11ty": "npx @11ty/eleventy --serve",
-    "start": "npm run watch:11ty & npm run watch:sass",
+    "build": "npx @11ty/eleventy",
+    "watch": "npm run watch:11ty & npm run watch:sass",
     "clean": "rm -r _site"
   },
   "repository": {
