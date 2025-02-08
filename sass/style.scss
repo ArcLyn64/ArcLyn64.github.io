@@ -95,10 +95,12 @@ header {
         a {
             &:link, &:visited{
                 color: $color-light;
-                text-decoration-color: $color-dark;
+                text-decoration: none;
+                text-shadow: 2px 2px $color-accent;
             }
             &:hover{
                 text-decoration-color: $color-light;
+                text-shadow: 4px 4px $color-accent;
             }
         }
     }
