@@ -1,0 +1,179 @@
+@font-face {
+  font-family: "Hauora";
+  src: url("../assets/fonts/Hauora[wght].woff2") format("woff2");
+}
+@font-face {
+  font-family: "Fliege";
+  src: url("../assets/fonts/FliegeMonoVF.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Moxiefully";
+  src: url("../assets/fonts/moxiefully.woff2") format("woff2");
+}
+@font-face {
+  font-family: "LTSaeada";
+  src: url("../assets/fonts/LTSaeada-Medium.woff2") format("woff2");
+}
+html {
+  color: #aaaaaa;
+  background-color: #111111;
+  font-family: Hauora;
+  font-size: 20px;
+}
+
+code {
+  font-family: Fliege;
+}
+
+a {
+  text-decoration-line: underline;
+}
+a:link, a:visited {
+  color: #aaaaaa;
+  text-decoration-color: #444444;
+}
+a:hover {
+  text-decoration-color: #aaaaaa;
+}
+
+header {
+  height: 115px;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+  background-color: rgb(29.75, 29.75, 29.75);
+}
+header .scroll-container {
+  overflow-x: scroll;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+header .scroll-container::-webkit-scrollbar {
+  background: transparent; /* Chrome/Safari/Webkit */
+  width: 0px;
+}
+header .centerer {
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: flex-center;
+}
+header .title {
+  font-size: 72px;
+  font-family: Moxiefully;
+  display: grid;
+  flex-grow: 1;
+}
+header .title a {
+  grid-area: 1/1/2/2;
+  margin: 0px;
+  padding: 20px;
+  color: #aaaaaa;
+  text-decoration-line: none;
+}
+header .title a:hover {
+  color: #aaaaaa;
+}
+header .title .bg1 {
+  padding-left: 22px;
+  color: #111111;
+}
+header .title .bg2 {
+  padding-left: 26px;
+  color: #474799;
+}
+header nav {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+header nav .header-link {
+  rotate: -40deg;
+  margin-right: -5px;
+  width: 50px;
+}
+header nav p {
+  font-weight: bold;
+}
+header nav a:link, header nav a:visited {
+  color: #aaaaaa;
+  text-decoration: none;
+  text-shadow: 2px 2px #474799;
+}
+header nav a:hover {
+  text-decoration-color: #aaaaaa;
+  text-shadow: 4px 4px #474799;
+}
+
+body.main {
+  margin: 0;
+  align-content: center;
+}
+body.main .squish-protect {
+  margin: 10px;
+}
+body.main .content {
+  border: 5px solid rgb(29.75, 29.75, 29.75);
+  border-radius: 10px 20px 40px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  max-width: 1000px;
+}
+body.main .content h1, body.main .content h2, body.main .content h3, body.main .content h4, body.main .content h5, body.main .content h6 {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: lighter;
+  border-bottom: 3px solid rgb(29.75, 29.75, 29.75);
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+body.main .content h1, body.main .content h2, body.main .content h3 {
+  font-family: LTSaeada;
+}
+body.main .content h4, body.main .content h5, body.main .content h6 {
+  font-family: Hauora;
+}
+body.main .content p {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+body.main .content .post-title {
+  border: none;
+  margin-bottom: -5px;
+}
+body.main .content .post-author {
+  padding-left: 12px;
+  margin-bottom: 0px;
+}
+body.main hr.end-line {
+  border-color: rgb(46.7522321429, 46.7522321429, 100.7477678571);
+  border-style: dashed;
+}
+body.main hr.post-divider {
+  border-color: rgb(29.75, 29.75, 29.75);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body.main a.post-list-title:link, body.main a.post-list-title:visited {
+  color: #aaaaaa;
+  text-decoration-color: #111111;
+}
+body.main a.post-list-title:hover {
+  text-decoration-color: #aaaaaa;
+}
+body.main table {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+  width: 97%;
+}
+
+/*# sourceMappingURL=style.css.map */
