@@ -85,6 +85,7 @@ header .title .bg2 {
 header nav {
   margin-top: auto;
   margin-bottom: auto;
+  margin-right: 50px;
   font-size: 20px;
   display: flex;
   flex-flow: row nowrap;
