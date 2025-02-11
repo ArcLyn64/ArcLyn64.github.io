@@ -9,6 +9,7 @@
     <title>Homepage | arclyn.net</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    
   </head>
   <header class="site-header">
     <div class="scroll-container">
@@ -52,4 +53,16 @@ I occasionally make short video essays, like <a href='https://youtu.be/vtREXTBOA
       </div>
     </div>
   </body>
+  <script>
+    let sidebar = document.querySelector(".scroll-container");
+
+    let left = localStorage.getItem("nav-scroll");
+    if (left !== null) {
+      sidebar.scrollLeft = parseInt(left, 10);
+    }
+
+    window.addEventListener("beforeunload", () => {
+      localStorage.setItem("nav-scroll", sidebar.scrollLeft);
+    });
+  </script>
 </html>
