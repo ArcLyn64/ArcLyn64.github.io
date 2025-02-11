@@ -143,8 +143,9 @@ body.main .content h4, body.main .content h5, body.main .content h6 {
 body.main .content p {
   padding-left: 10px;
   padding-right: 10px;
-  margin-top: 0.3em;
-  margin-bottom: 0.3em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  line-height: 1.3em;
 }
 body.main .content .post-title {
   border: none;
