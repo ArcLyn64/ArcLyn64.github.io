@@ -201,4 +201,44 @@ body.main {
         width: 97%;
     }
 }
-  
+
+#scroll-indicator.active {
+    position: relative;
+    width: 100px;
+    margin-left: -200px;
+    margin-right: 100px;
+    animation-name: fade-right;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    opacity: 0.0;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    code {
+        background-color: $color-dark;
+        margin-top: auto; 
+        margin-bottom: auto; 
+    }
+}
+#scroll-indicator.inactive {
+    display: none;
+}
+
+@keyframes fade-right {
+    0% {
+        opacity:1.0;
+        left: 0px;
+    }
+    50% {
+        left: 100px;
+    }
+    75% {
+        opacity:0.0;
+        left: 100px;
+    }
+    100% {
+        opacity:0.0;
+        left: 100px;
+    }
+}

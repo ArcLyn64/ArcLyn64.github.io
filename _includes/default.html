@@ -19,6 +19,9 @@
           <a class="bg1">arclyn.net</a>
           <a href="/">arclyn.net</a>
         </div>    
+        <div id="scroll-indicator" class="active">
+          <code>scroll>></code>
+        </div>
       </div>
       <nav>
         <a href="/posts">
@@ -39,6 +42,37 @@
       </nav>
     </div>
   </header>
+  <script>
+    const sidebar = document.querySelector(".scroll-container");
+    const scrollHint = document.querySelector('#scroll-indicator');
+    let displayScrollHint = false;
+    if (sidebar !== null) {
+      const left = localStorage.getItem("nav-scroll");
+      if (left !== null) {
+        // save scroll location so page change is seamless
+        sidebar.scrollLeft = parseInt(left, 10);
+      }
+
+      const scrollable = sidebar.scrollLeftMax > 0;
+      displayScrollHint = scrollable && sidebar.scrollLeft == 0
+    }
+    
+    // handle displaying scroll hint
+    if (scrollHint !== null) {
+      if (displayScrollHint) {
+        scrollHint.classList.remove('inactive')
+        scrollHint.classList.add('active')
+      } else {
+        scrollHint.classList.remove('active')
+        scrollHint.classList.add('inactive')
+      }
+    }
+
+    // load saved scroll information
+    window.addEventListener("beforeunload", () => {
+      localStorage.setItem("nav-scroll", sidebar.scrollLeft);
+    });
+  </script>
   <body class="main">
     <div class="squish-protect">
       <div class="content">
@@ -46,16 +80,4 @@
       </div>
     </div>
   </body>
-  <script>
-    let sidebar = document.querySelector(".scroll-container");
-
-    let left = localStorage.getItem("nav-scroll");
-    if (left !== null) {
-      sidebar.scrollLeft = parseInt(left, 10);
-    }
-
-    window.addEventListener("beforeunload", () => {
-      localStorage.setItem("nav-scroll", sidebar.scrollLeft);
-    });
-  </script>
 </html>
