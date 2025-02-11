@@ -18,7 +18,7 @@ html {
   color: #aaaaaa;
   background-color: #111111;
   font-family: Hauora;
-  font-size: 20px;
+  font-size: 14pt;
 }
 
 code {
@@ -176,6 +176,7 @@ body.main table {
   margin-left: auto;
   padding: 0;
   width: 97%;
+  font-size: 10pt;
 }
 
 #scroll-indicator.active {
@@ -204,6 +205,9 @@ body.main table {
 @keyframes fade-right {
   0% {
     opacity: 1;
+    left: 0px;
+  }
+  10% {
     left: 0px;
   }
   50% {
