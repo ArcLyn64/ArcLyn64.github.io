@@ -8,7 +8,7 @@ author: Lyn
 Sonic Unleashed has been my registered favorite Sonic game for years, a fact apparently helped by the fact that I could not really play it for years. Since my 360 red ringed many many many years ago I had only my memories of the game to rely on.
 Attempting to run it via emulator was plagued with crashes, slowdowns, visual bugs, and general sadness all around, so I have not passed the two hour mark for well over ten years. 
 
-[The recomp](https://github.com/hedge-dev/UnleashedRecomp) changed this! Sonic Unleased for the Personal Computer is a capital-P Perfect port of the game! It runs great, it looks great, and I can finally get a pure, unobstructed, even slightly enhanced experience of the game!
+[The recomp](https://github.com/hedge-dev/UnleashedRecomp) changed this! Sonic Unleashed for the Personal Computer is a capital-P Perfect port of the game! It runs great, it looks great, and I can finally get a pure, unobstructed, even slightly enhanced experience of the game!
 
 My experience of the game is that it's perhaps not that good.
 
