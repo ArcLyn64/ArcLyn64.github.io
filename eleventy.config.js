@@ -4,6 +4,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.setInputDirectory("src");
     eleventyConfig.setIncludesDirectory("../_includes");
     eleventyConfig.addCollection("posts", function (collectionsApi) {
-        return collectionsApi.getFilteredByTag("posts");
+        return collectionsApi.getFilteredByTag("posts").toReversed();
     });
 };
